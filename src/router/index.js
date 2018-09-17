@@ -10,8 +10,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
-      redirect: '/goods-list'
+      path: '/'
     },
     {
       path: '/goods-list',

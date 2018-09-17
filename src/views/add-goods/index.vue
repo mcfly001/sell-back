@@ -94,6 +94,7 @@ export default {
 <style type="text/scss" lang="scss" rel="stylesheet/scss" scoped>
 
   .add-goods-wrapper{
+    margin-left: 250px;
 
     .crumb-wrap{
       min-height: 60px;

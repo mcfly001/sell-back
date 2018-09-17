@@ -58,7 +58,6 @@
                   },
                   on: {
                     click: () => {
-                      console.log(params)
                       this.remove(params.index)
                     }
                   }
@@ -67,7 +66,7 @@
             }
           }
         ],
-        data: [{}],
+        data: [],
         page: {
           total: 100,
           pageSize: 1,
@@ -88,11 +87,11 @@
             this.page.total = data.total
           }
           else{
-            this.data = [{}]
+            this.data = []
             this.page.total = 0
           }
         }).catch(e => {
-          this.data = [{}]
+          this.data = []
           this.page.total = 0
         })
       },

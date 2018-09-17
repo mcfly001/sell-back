@@ -19,6 +19,17 @@ const componentsArr = {
   Select
 }
 
+router.beforeEach((to, from, next) => {
+  if(to.path !== '/'){
+    let userInfo = JSON.parse(sessionStorage.getItem('userInfo')) || {}
+    if(userInfo.password !== '123123'){
+      Message.error('请先登陆')
+      return
+    }
+  }
+  next()
+})
+
 Object.keys(componentsArr).forEach(item => {
   Vue.component(item, componentsArr[item])
 })

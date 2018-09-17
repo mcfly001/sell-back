@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="right-wrapper">
     <div class="crumb-wrap">
       <span class="line"></span>
       <span class="text">添加分类</span>
@@ -46,6 +46,10 @@ export default {
 </script>
 
 <style type="text/scss" lang="scss" rel="stylesheet/scss" scoped>
+
+  .right-wrapper{
+    margin-left: 250px;
+  }
 
   .crumb-wrap{
     min-height: 60px;

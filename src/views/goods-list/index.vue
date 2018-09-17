@@ -1,5 +1,5 @@
 <template>
-  <div class="shop-list-wrapper flex-col">
+  <div class="shop-list-wrapper">
     <div class="crumb-wrap">
       <span class="line"></span>
       <span class="text">商品列表</span>
@@ -95,7 +95,7 @@ export default {
           this.page.total = data.total
         }
         else{
-          this.data = [{}]
+          this.data = []
           this.page.total = 0
         }
       }).catch(e => {
@@ -134,6 +134,8 @@ export default {
 <style type="text/scss" lang="scss" rel="stylesheet/scss" scoped>
 
   .shop-list-wrapper{
+    height: 100%;
+    margin-left: 250px;
 
     .crumb-wrap{
       min-height: 60px;

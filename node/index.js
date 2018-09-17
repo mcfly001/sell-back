@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 
 // 获取商品列表
-app.get('/get.goods.list', function(req, res){
+app.get('/api-douchi/get.goods.list', function(req, res){
   let { pageSize, pageNum, searchText } = url.parse(req.url, true).query
   find({pageSize, pageNum, searchText}, 'goods', function(result){
     let data = result[1].length ? result[1] : []
@@ -30,7 +30,7 @@ app.get('/get.goods.list', function(req, res){
 })
 
 // 添加商品
-app.post('/add.goods', function(req, res){
+app.post('/api-douchi/add.goods', function(req, res){
   let { name, price, category, breif } = req.body
   insert({name, price, category, breif}, 'goods', function(result){
     if(Number(result.result.ok) === 1){
@@ -48,7 +48,7 @@ app.post('/add.goods', function(req, res){
 })
 
 // 删除商品
-app.post('/delete.goods', function(req, res){
+app.post('/api-douchi/delete.goods', function(req, res){
   let { _id } = req.body
   remove(_id, 'goods', function(result){
     if(Number(result.result.ok) === 1){
@@ -66,7 +66,7 @@ app.post('/delete.goods', function(req, res){
 })
 
 // 获取分类列表
-app.get('/get.category.list', function(req, res){
+app.get('/api-douchi/get.category.list', function(req, res){
   let { pageSize, pageNum, searchText } = url.parse(req.url, true).query
   find({pageSize, pageNum, searchText}, 'category', function(result){
     let data = result[1].length ? result[1] : []
@@ -79,7 +79,7 @@ app.get('/get.category.list', function(req, res){
 })
 
 // 添加分类
-app.post('/add.category', function(req, res){
+app.post('/api-douchi/add.category', function(req, res){
   let { name } = req.body
   insert({name}, 'category', function(result){
     if(Number(result.result.ok) === 1){
@@ -97,7 +97,7 @@ app.post('/add.category', function(req, res){
 })
 
 // 删除分类
-app.post('/delete.category', function(req, res){
+app.post('/api-douchi/delete.category', function(req, res){
   let { _id } = req.body
   remove(_id, 'category', function(result){
     if(Number(result.result.ok) === 1){
@@ -114,4 +114,4 @@ app.post('/delete.category', function(req, res){
   })
 })
 
-app.listen(3333, "127.0.0.1")
+app.listen(8700, "127.0.0.1")

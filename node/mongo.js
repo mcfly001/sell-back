@@ -1,7 +1,7 @@
 const mongo = require("mongodb")
 const MongoClient = mongo.MongoClient
 const ObjectID = mongo.ObjectID
-const mongourl = 'mongodb://47.105.41.30:3333'
+const mongourl = 'mongodb://47.98.169.84:3333'
 
 const login = function(callback){
   MongoClient.connect(mongourl, function(err, db){
