@@ -405,7 +405,7 @@ async@1.x, async@^1.5.2:
   version "1.5.2"
   resolved "https://registry.npmjs.org/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
-async@^2.0.0, async@^2.1.2, async@^2.4.1, async@^2.5.0:
+async@2.6.1, async@^2.0.0, async@^2.1.2, async@^2.4.1, async@^2.5.0:
   version "2.6.1"
   resolved "https://registry.npmjs.org/async/-/async-2.6.1.tgz#b245a23ca71930044ec53fa46aa00a3e87c6a610"
   dependencies:
@@ -1145,6 +1145,10 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
+bluebird@3.5.1:
+  version "3.5.1"
+  resolved "https://registry.npmjs.org/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
+
 bluebird@^3.1.1, bluebird@^3.3.0, bluebird@^3.4.7, bluebird@^3.5.1:
   version "3.5.2"
   resolved "https://registry.npmjs.org/bluebird/-/bluebird-3.5.2.tgz#1be0908e054a751754549c270489c1505d4ab15a"
@@ -1319,6 +1323,10 @@ browserslist@^3.2.6:
 bson@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/bson/-/bson-1.1.0.tgz#bee57d1fb6a87713471af4e32bcae36de814b5b0"
+
+bson@~1.0.5:
+  version "1.0.9"
+  resolved "https://registry.npmjs.org/bson/-/bson-1.0.9.tgz#12319f8323b1254739b7c6bef8d3e89ae05a2f57"
 
 buffer-alloc-unsafe@^1.1.0:
   version "1.1.0"
@@ -2143,7 +2151,7 @@ debug@2.6.8:
   dependencies:
     ms "2.0.0"
 
-debug@=3.1.0:
+debug@3.1.0, debug@=3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:
@@ -4364,6 +4372,10 @@ just-extend@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/just-extend/-/just-extend-3.0.0.tgz#cee004031eaabf6406da03a7b84e4fe9d78ef288"
 
+kareem@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npmjs.org/kareem/-/kareem-2.2.1.tgz#9950809415aa3cde62ab43b4f7b919d99816e015"
+
 karma-coverage@^1.1.1:
   version "1.1.2"
   resolved "https://registry.npmjs.org/karma-coverage/-/karma-coverage-1.1.2.tgz#cc09dceb589a83101aca5fe70c287645ef387689"
@@ -4579,6 +4591,15 @@ lodash._baseassign@^3.0.0:
     lodash._basecopy "^3.0.0"
     lodash.keys "^3.0.0"
 
+lodash._basecallback@^3.0.0:
+  version "3.3.1"
+  resolved "https://registry.npmjs.org/lodash._basecallback/-/lodash._basecallback-3.3.1.tgz#b7b2bb43dc2160424a21ccf26c57e443772a8e27"
+  dependencies:
+    lodash._baseisequal "^3.0.0"
+    lodash._bindcallback "^3.0.0"
+    lodash.isarray "^3.0.0"
+    lodash.pairs "^3.0.0"
+
 lodash._baseclone@^3.0.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/lodash._baseclone/-/lodash._baseclone-3.3.0.tgz#303519bf6393fe7e42f34d8b630ef7794e3542b7"
@@ -4602,13 +4623,43 @@ lodash._basecreate@^3.0.0:
   version "3.0.3"
   resolved "https://registry.npmjs.org/lodash._basecreate/-/lodash._basecreate-3.0.3.tgz#1bc661614daa7fc311b7d03bf16806a0213cf821"
 
+lodash._baseeach@^3.0.0:
+  version "3.0.4"
+  resolved "https://registry.npmjs.org/lodash._baseeach/-/lodash._baseeach-3.0.4.tgz#cf8706572ca144e8d9d75227c990da982f932af3"
+  dependencies:
+    lodash.keys "^3.0.0"
+
+lodash._basefind@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/lodash._basefind/-/lodash._basefind-3.0.0.tgz#b2bba05cc645f972de2cf925fa2bf63a0f60c8ae"
+
+lodash._basefindindex@^3.0.0:
+  version "3.6.0"
+  resolved "https://registry.npmjs.org/lodash._basefindindex/-/lodash._basefindindex-3.6.0.tgz#f083360a1b022418ed81bc899beb312e21e74a4f"
+
 lodash._basefor@^3.0.0:
   version "3.0.3"
   resolved "https://registry.npmjs.org/lodash._basefor/-/lodash._basefor-3.0.3.tgz#7550b4e9218ef09fad24343b612021c79b4c20c2"
 
+lodash._baseisequal@^3.0.0:
+  version "3.0.7"
+  resolved "https://registry.npmjs.org/lodash._baseisequal/-/lodash._baseisequal-3.0.7.tgz#d8025f76339d29342767dcc887ce5cb95a5b51f1"
+  dependencies:
+    lodash.isarray "^3.0.0"
+    lodash.istypedarray "^3.0.0"
+    lodash.keys "^3.0.0"
+
 lodash._bindcallback@^3.0.0:
   version "3.0.1"
   resolved "https://registry.npmjs.org/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
+
+lodash._createassigner@^3.0.0:
+  version "3.1.1"
+  resolved "https://registry.npmjs.org/lodash._createassigner/-/lodash._createassigner-3.1.1.tgz#838a5bae2fdaca63ac22dee8e19fa4e6d6970b11"
+  dependencies:
+    lodash._bindcallback "^3.0.0"
+    lodash._isiterateecall "^3.0.0"
+    lodash.restparam "^3.0.0"
 
 lodash._getnative@^3.0.0:
   version "3.9.1"
@@ -4665,7 +4716,18 @@ lodash.defaultsdeep@4.3.2:
     lodash.mergewith "^4.0.0"
     lodash.rest "^4.0.0"
 
-lodash.get@^4.4.2:
+lodash.find@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.npmjs.org/lodash.find/-/lodash.find-3.2.1.tgz#046e319f3ace912ac6c9246c7f683c5ec07b36ad"
+  dependencies:
+    lodash._basecallback "^3.0.0"
+    lodash._baseeach "^3.0.0"
+    lodash._basefind "^3.0.0"
+    lodash._basefindindex "^3.0.0"
+    lodash.isarray "^3.0.0"
+    lodash.keys "^3.0.0"
+
+lodash.get@4.4.2, lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://registry.npmjs.org/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
 
@@ -4677,15 +4739,38 @@ lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "https://registry.npmjs.org/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
 
+lodash.isequal@^4.2.0:
+  version "4.5.0"
+  resolved "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+
+lodash.isplainobject@^3.0.0, lodash.isplainobject@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-3.2.0.tgz#9a8238ae16b200432960cd7346512d0123fbf4c5"
+  dependencies:
+    lodash._basefor "^3.0.0"
+    lodash.isarguments "^3.0.0"
+    lodash.keysin "^3.0.0"
+
 lodash.isplainobject@^4.0.0:
   version "4.0.6"
   resolved "https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+
+lodash.istypedarray@^3.0.0:
+  version "3.0.6"
+  resolved "https://registry.npmjs.org/lodash.istypedarray/-/lodash.istypedarray-3.0.6.tgz#c9a477498607501d8e8494d283b87c39281cef62"
 
 lodash.keys@^3.0.0:
   version "3.1.2"
   resolved "https://registry.npmjs.org/lodash.keys/-/lodash.keys-3.1.2.tgz#4dbc0472b156be50a0b286855d1bd0b0c656098a"
   dependencies:
     lodash._getnative "^3.0.0"
+    lodash.isarguments "^3.0.0"
+    lodash.isarray "^3.0.0"
+
+lodash.keysin@^3.0.0:
+  version "3.0.8"
+  resolved "https://registry.npmjs.org/lodash.keysin/-/lodash.keysin-3.0.8.tgz#22c4493ebbedb1427962a54b445b2c8a767fb47f"
+  dependencies:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
@@ -4697,13 +4782,39 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
+lodash.merge@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.npmjs.org/lodash.merge/-/lodash.merge-3.3.2.tgz#0d90d93ed637b1878437bb3e21601260d7afe994"
+  dependencies:
+    lodash._arraycopy "^3.0.0"
+    lodash._arrayeach "^3.0.0"
+    lodash._createassigner "^3.0.0"
+    lodash._getnative "^3.0.0"
+    lodash.isarguments "^3.0.0"
+    lodash.isarray "^3.0.0"
+    lodash.isplainobject "^3.0.0"
+    lodash.istypedarray "^3.0.0"
+    lodash.keys "^3.0.0"
+    lodash.keysin "^3.0.0"
+    lodash.toplainobject "^3.0.0"
+
 lodash.mergewith@^4.0.0, lodash.mergewith@^4.6.0:
   version "4.6.1"
   resolved "https://registry.npmjs.org/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz#639057e726c3afbdb3e7d42741caa8d6e4335927"
 
+lodash.pairs@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/lodash.pairs/-/lodash.pairs-3.0.1.tgz#bbe08d5786eeeaa09a15c91ebf0dcb7d2be326a9"
+  dependencies:
+    lodash.keys "^3.0.0"
+
 lodash.rest@^4.0.0:
   version "4.0.5"
   resolved "https://registry.npmjs.org/lodash.rest/-/lodash.rest-4.0.5.tgz#954ef75049262038c96d1fc98b28fdaf9f0772aa"
+
+lodash.restparam@^3.0.0:
+  version "3.6.1"
+  resolved "https://registry.npmjs.org/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
 
 lodash.tail@^4.1.1:
   version "4.1.1"
@@ -4712,6 +4823,13 @@ lodash.tail@^4.1.1:
 lodash.throttle@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+
+lodash.toplainobject@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/lodash.toplainobject/-/lodash.toplainobject-3.0.0.tgz#28790ad942d293d78aa663a07ecf7f52ca04198d"
+  dependencies:
+    lodash._basecopy "^3.0.0"
+    lodash.keysin "^3.0.0"
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -5057,12 +5175,34 @@ mongodb-core@3.1.5:
   optionalDependencies:
     saslprep "^1.0.0"
 
-mongodb@^3.0.9:
+mongodb@3.1.6, mongodb@^3.0.9:
   version "3.1.6"
   resolved "https://registry.npmjs.org/mongodb/-/mongodb-3.1.6.tgz#6054641973b5bf5b5ae1c67dcbcf8fa88280273d"
   dependencies:
     mongodb-core "3.1.5"
     safe-buffer "^5.1.2"
+
+mongoose-legacy-pluralize@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
+
+mongoose@^5.2.17:
+  version "5.2.17"
+  resolved "https://registry.npmjs.org/mongoose/-/mongoose-5.2.17.tgz#8baeb60a675d00da03633d679a72457dbb5b2285"
+  dependencies:
+    async "2.6.1"
+    bson "~1.0.5"
+    kareem "2.2.1"
+    lodash.get "4.4.2"
+    mongodb "3.1.6"
+    mongodb-core "3.1.5"
+    mongoose-legacy-pluralize "1.0.2"
+    mpath "0.5.1"
+    mquery "3.2.0"
+    ms "2.0.0"
+    regexp-clone "0.0.1"
+    safe-buffer "5.1.2"
+    sliced "1.0.1"
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -5074,6 +5214,20 @@ move-concurrently@^1.0.1:
     mkdirp "^0.5.1"
     rimraf "^2.5.4"
     run-queue "^1.0.3"
+
+mpath@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.npmjs.org/mpath/-/mpath-0.5.1.tgz#17131501f1ff9e6e4fbc8ffa875aa7065b5775ab"
+
+mquery@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/mquery/-/mquery-3.2.0.tgz#e276472abd5109686a15eb2a8e0761db813c81cc"
+  dependencies:
+    bluebird "3.5.1"
+    debug "3.1.0"
+    regexp-clone "0.0.1"
+    safe-buffer "5.1.2"
+    sliced "1.0.1"
 
 ms@0.7.1:
   version "0.7.1"
@@ -6240,6 +6394,12 @@ qjobs@^1.1.4:
   version "1.2.0"
   resolved "https://registry.npmjs.org/qjobs/-/qjobs-1.2.0.tgz#c45e9c61800bd087ef88d7e256423bdd49e5d071"
 
+qrcode2@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.npmjs.org/qrcode2/-/qrcode2-1.2.3.tgz#692708879b7bf632e5de04475767c3b82535d627"
+  dependencies:
+    webpack-merge "^0.14.1"
+
 qs@6.5.1:
   version "6.5.1"
   resolved "https://registry.npmjs.org/qs/-/qs-6.5.1.tgz#349cdf6eef89ec45c12d7d5eb3fc0c870343a6d8"
@@ -6456,6 +6616,10 @@ regex-not@^1.0.0, regex-not@^1.0.2:
   dependencies:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
+
+regexp-clone@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/regexp-clone/-/regexp-clone-0.0.1.tgz#a7c2e09891fdbf38fbb10d376fb73003e68ac589"
 
 regexpp@^1.0.1:
   version "1.1.0"
@@ -6942,6 +7106,10 @@ slice-ansi@1.0.0:
   resolved "https://registry.npmjs.org/slice-ansi/-/slice-ansi-1.0.0.tgz#044f1a49d8842ff307aad6b505ed178bd950134d"
   dependencies:
     is-fullwidth-code-point "^2.0.0"
+
+sliced@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/sliced/-/sliced-1.0.1.tgz#0b3a662b5d04c3177b1926bea82b03f837a2ef41"
 
 smart-buffer@^1.0.13:
   version "1.1.15"
@@ -7907,6 +8075,15 @@ webpack-dev-server@^2.9.1:
     supports-color "^5.1.0"
     webpack-dev-middleware "1.12.2"
     yargs "6.6.0"
+
+webpack-merge@^0.14.1:
+  version "0.14.1"
+  resolved "https://registry.npmjs.org/webpack-merge/-/webpack-merge-0.14.1.tgz#d6bfe6d9360a024e1e7f8e6383ae735f1737cd23"
+  dependencies:
+    lodash.find "^3.2.1"
+    lodash.isequal "^4.2.0"
+    lodash.isplainobject "^3.2.0"
+    lodash.merge "^3.3.2"
 
 webpack-merge@^4.1.0:
   version "4.1.4"

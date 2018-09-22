@@ -1,5 +1,15 @@
 import request from './index'
 
+// 注册用户
+export const registeredUser = (account, password) => {
+  return request('/api-douchi/registered', {account, password}, 'post')
+}
+
+// 登陆
+export const loginBg = (account, password) => {
+  return request('/api-douchi/login', {account, password}, 'get')
+}
+
 // 获取商品列表
 export const getGoodsList = (pageSize = 1, pageNum = 20, searchText = '') => {
   return request('/api-douchi/get.goods.list', {pageSize, pageNum, searchText}, 'get')

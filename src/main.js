@@ -20,7 +20,7 @@ const componentsArr = {
 }
 
 router.beforeEach((to, from, next) => {
-  if(to.path !== '/'){
+  if(to.path !== '/login'){
     let userInfo = JSON.parse(sessionStorage.getItem('userInfo')) || {}
     if(userInfo.password !== '123123'){
       Message.error('请先登陆')

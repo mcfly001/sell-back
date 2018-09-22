@@ -16,6 +16,26 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 app.use(bodyParser.json())
 
+// 登陆
+app.get('/api-douchi/login', function (req, res) {
+  let { account, password } = url.parse(req.url, true).query
+  find({ account, password }, 'userInfo', function (result) {
+    let arr = Object.keys(result)
+    if (arr.length) {
+      res.send(JSON.stringify({
+        data: true,
+        success: true
+      }))
+    }
+    else {
+      res.send(JSON.stringify({
+        data: false,
+        success: true
+      }))
+    }
+  })
+})
+
 // 获取商品列表
 app.get('/api-douchi/get.goods.list', function(req, res){
   let { pageSize, pageNum, searchText } = url.parse(req.url, true).query

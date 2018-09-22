@@ -1,4 +1,5 @@
 <template>
+
   <div class="shop-list-wrapper">
     <div class="crumb-wrap">
       <span class="line"></span>

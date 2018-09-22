@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <div class="header">
-      <p class="text-left m-l-large">巧味厨后台管理</p>
+      <p class="text-left m-l-large pull-left">test</p>
+      <div class="pull-right m-r" @click="loginOut">推出</div>
     </div>
     <div class="container">
       <ul class="leftnav">
@@ -23,22 +24,30 @@
       return {
         lefeNavList: [
           {
-            path: '/goods-list',
+            path: '/home/goods-list',
             name: '商品列表'
           },
           {
-            path: '/category-list',
+            path: '/home/category-list',
             name: '分类列表'
           },
           {
-            path: '/add-goods',
+            path: '/home/add-goods',
             name: '添加商品'
           },
           {
-            path: '/add-category',
+            path: '/home/add-category',
             name: '添加分类'
           }
         ]
+      }
+    },
+    methods: {
+      loginOut(){
+        sessionStorage.removeItem('userInfo')
+        this.$router.push({
+          path: '/login'
+        })
       }
     }
   }
