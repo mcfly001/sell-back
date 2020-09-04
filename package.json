@@ -67,7 +67,7 @@
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "^2.0.2",
     "mocha": "^3.2.0",
-    "mongodb": "^3.0.9",
+    "mongodb": "^3.1.13",
     "nightwatch": "^0.9.12",
     "node-notifier": "^5.1.2",
     "node-sass": "^4.9.0",
